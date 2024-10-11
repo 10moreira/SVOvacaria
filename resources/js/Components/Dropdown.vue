@@ -1,6 +1,9 @@
 <script setup>
 import { computed, onMounted, onUnmounted, ref } from 'vue';
 
+import { defineProps } from 'vue';
+
+
 const props = defineProps({
     align: {
         type: String,
@@ -41,10 +44,13 @@ const alignmentClasses = computed(() => {
     }
 });
 
+
 const open = ref(false);
 </script>
 
 <template>
+
+
     <div class="relative">
         <div @click="open = !open">
             <slot name="trigger" />
