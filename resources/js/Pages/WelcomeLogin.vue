@@ -1,6 +1,7 @@
 <script setup>
 import Checkbox from '@/Components/Checkbox.vue';
 import GuestLayout from '@/Layouts/GuestLayout.vue';
+import GuestLayoutWelcomeLog from '@/Layouts/GuestLayoutWelcomeLog.vue';
 import InputError from '@/Components/InputError.vue';
 import InputLabel from '@/Components/InputLabel.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
@@ -44,13 +45,9 @@ body{
 </style>
 
 
-
-
-
-
 <template> 
 
-    <GuestLayout>
+    <GuestLayoutWelcomeLog>
         <Head title="Log in" />
 
         <div v-if="status" class="mb-4 text-sm font-medium text-green-600">
@@ -127,5 +124,5 @@ body{
 
             </div>
         </form>
-    </GuestLayout>
+    </GuestLayoutWelcomeLog>
 </template>

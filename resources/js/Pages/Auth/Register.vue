@@ -12,7 +12,6 @@ import { Head, Link, useForm } from '@inertiajs/vue3';
 import { ref } from 'vue';
 
 
-const showingNavigationDropdown = ref(false);
 
 const form = useForm({
     name: '',
@@ -28,6 +27,7 @@ const submit = () => {
 };
 
 </script>
+
 
 <template>
     <GuestLayout>
@@ -99,83 +99,98 @@ const submit = () => {
             </div>
             
                         <!-- Settings Dropdown -->
-                        <div class="hidden sm:ms-6 sm:flex sm:items-center">    
-                            <div class="relative ms-3">
-                               
-                             <Dropdown align="right" width="48">
+                    <div class="hidden sm:ms-6 sm:flex sm:items-center">    
+                                                           
+                         <Dropdown align="right" width="48">
                                 <template #trigger>
-                                        
-                                    <span class="inline-flex rounded-md"> 
-                                        <InputLabel for="setor" value="Setores"/>
-                                            <button
-                                                type="button"
-                                                class="inline-flex items-center rounded-md border border-transparent bg-white px-3 py-2 text-sm font-medium leading-4 text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 focus:outline-none"
-                                            >                                           
-                                                                                                                    
-                                                <svg
-                                                    class="-me-0.5 ms-2 h-4 w-4"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 20 20"
-                                                    fill="currentColor"
-                                                >  
+                                  
+                                    <InputLabel for="setor" value="Setores:"/>
 
-                                                <path   
-                                                        fill-rule="evenodd"
-                                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                        clip-rule="evenodd"
-                                                    />
-                                                </svg>                                                
+                                        <select class="relative ms-3" id="exampleFormControlSelect">
+                                        <option value="" selected>Selecionar</option>   
 
-                                            <div>                                                                                         
-                                    </div>     
-                                          </button>                                           
-                                    </span>
-                                <div class="mt-3 space-y-1">
-                                    <ResponsiveNavLink>Profile</ResponsiveNavLink>
-                                    <ResponsiveNavLink>Log Out</ResponsiveNavLink>  
-                                </div>
-                                                                                                                                                                                                                                               
-                            </template>                                                                                            
-                               
-                        </Dropdown>                                                        
+                                            <option>TI</option>
+                                            <option>Biblioteca</option>
+                                            <option>Gabinete</option>
+                                            <option>DAP</option>
+                                            <option>Dir. Ensino</option>
+                                            <option>Infra</option>
+                                            <option>Lab. Cien.</option>
+                                            <option>Registros</option>
+                                            <option>Agropecuário</option>
+                                            <option>Assistência Estu.</option>
+
+                                        </select>                                                                                                                                                              
+                                                                                                                                                                                                                                                                               
+                                </template>                                                                                                            
+                         </Dropdown>
+                         
+                         <Dropdown align="right" width="48">
+                            <template #trigger>
+                                                                    
+                             <InputLabel for="setor" value="Funções:"/>   
+                                  
+                                    <select class="relative ms-3" id="exampleFormControlSelect">
+                                     <option value="" selected>Selecionar</option>                                         
+                                            <option>P. EBTT</option>
+                                            <option>TA</option>
+                                            <option>TAE</option>
+                                            <option>Estagiário</option>
+                                            <option>Tercerizado</option>
+                                                                                                                          
+                                    </select>                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                 
+                             </template>                                                                                                            
+                         </Dropdown>
+                         
+                         <Dropdown align="right" width="48">
+                            <template #trigger>
+                                                                                                       
+                                <InputLabel for="setor" value="Carga horária:"/>                                                                        
+                                  <select class="relative ms-3" id="exampleFormControlSelect">
+                                     <option value="" selected>Selecionar</option>                                                                          
+                                          <option>20</option>
+                                          <option>25</option>      
+                                          <option>30</option>
+                                          <option>40</option>
+                                          <option>DE</option>
+                                                                                                                                                                                                                                                                                   
+                                    </select>                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                                    
+                            </template>                                                                                                            
+                        </Dropdown>
                         
-                    </div>
-                    
-                  </div>  
-              
+                        
+                        <Dropdown align="right" width="48">
+                            <template #trigger>
+                                                                                                       
+                                <InputLabel for="setor" value="Lotação:"/>                                                                        
+                                  <select class="relative ms-3" id="exampleFormControlSelect">
+                                    <option value="" selected>Selecionar</option>                                                                          
+                                    <option value="Bento Goncalves">Bento Goncalves</option>
+                                    <option value="Canoas">Canoas</option>
+                                    <option value="Caxias do Sul">Caxias do Sul</option>
+                                    <option value="Erechim">Erechim</option>
+                                    <option value="Feliz">Feliz</option>
+                                    <option value="Farroupilha">Farroupilha</option>
+                                    <option value="Ibiruba">Ibiruba</option>
+                                    <option value="Osorio">Osorio</option>
+                                    <option value="Porto Alegre">Porto Alegre</option>
+                                    <option value="Rio Grande">Rio Grande</option>
+                                    <option value="Restinga">Restinga</option>
+                                    <option value="Sertao">Sertao</option>
+                                    <option value="Reitoria">Reitoria</option>
+                                    <option value="Vacaria">Vacaria</option>
+                                                                                                                                                                                                                                                                                                                   
+                                </select>                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                                    
+                            </template>                                                                                                            
+                        </Dropdown>
+                                                                     
+                    </div>                                                                                                                                                                                         
 
             <div class="mt-4">
-                <InputLabel for="funcao" value="Função" />
-
-                <TextInput
-                    id="email"
-                    type="email"
-                    class="mt-1 block w-full"
-                    v-model="form.email"
-                    required
-                    autocomplete="username"
-                />
-
-             <InputError class="mt-2" :message="form.errors.email"/>
-            </div>
-            
-            <div class="mt-4">
-                <InputLabel for="cargaHoraria" value="Carga Horária"/>
-
-                <TextInput
-                    id="email"
-                    type="email"
-                    class="mt-1 block w-full"
-                    v-model="form.email"
-                    required
-                    autocomplete="username"
-                />
-
-                <InputError class="mt-2" :message="form.errors.email" />
-            </div>
-
-            <div class="mt-4">
-                <InputLabel for="lotacao" value="Lotação"/>
+                <InputLabel for="celular" value="Celular"/>
 
                 <TextInput
                     id="email"
@@ -191,7 +206,7 @@ const submit = () => {
 
 
             <div class="mt-4">
-                <InputLabel for="password" value="Password" />
+                <InputLabel for="password" value="Senha"/>
 
                 <TextInput
                     id="password"
@@ -208,7 +223,7 @@ const submit = () => {
             <div class="mt-4">
                 <InputLabel
                     for="password_confirmation"
-                    value="Confirm Password"
+                    value="Repita a senha"
                 />
 
                 <TextInput
@@ -249,12 +264,11 @@ const submit = () => {
                     :class="{ 'opacity-25': form.processing }"
                     :disabled="form.processing"
                 >
-                    Register
+                    Registrar
                 </PrimaryButton>
             
-            </div>    
-    
-
+            </div>        
+        
         </form>
     </GuestLayout>
 </template>
