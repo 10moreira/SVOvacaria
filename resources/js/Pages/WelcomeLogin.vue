@@ -46,7 +46,7 @@ body{
 
 
 <template> 
-
+     
     <GuestLayoutWelcomeLog>
         <Head title="Log in" />
 
@@ -125,4 +125,5 @@ body{
             </div>
         </form>
     </GuestLayoutWelcomeLog>
+    
 </template>
