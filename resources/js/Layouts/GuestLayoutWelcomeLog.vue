@@ -16,13 +16,13 @@ import { Link } from '@inertiajs/vue3';
                                     
                     <div class="mt-6 w-full overflow-hidden bg-white px-6 py-4 shadow-md sm:max-w-xs sm:rounded-md fixed center-0 center-0 center-0">   
 
-                        <div>        
+                       <div>        
                         <Link href="/">                            
                             <ApplicationLogo class="size-16 relative left-20 text-red"/>
                         </Link>            
-                    </div>
+                      </div>
                                         
-                        <slot/>     
+                         <slot/>     
                                                         
                     </div>                        
                 
