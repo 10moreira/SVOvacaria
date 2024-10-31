@@ -1,18 +1,31 @@
-<script setup>
+<script>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
+
+
+export default {
+    props: {
+        users: Array
+    },    
+    components: {
+        AuthenticatedLayout,
+        Head,
+    },
+
+}
+
 
 </script>
 
 <template>
-    <Head title="Viatura" />
-
- <AuthenticatedLayout>
+    <Head title="SolicitarViatura" />
+    
+    <AuthenticatedLayout>
         <template #header>
             <h2
                 class="text-xl font-semibold leading-tight text-gray-800"
             >
-               Realizar solicitação aqui
+                Aqui vai componentes para Solicitar Viaturas!
             </h2>
         </template>
 
@@ -23,10 +36,10 @@ import { Head } from '@inertiajs/vue3';
                 >
                     <div class="p-6 text-gray-900">
                         <li
-                           v-for="(user, key) in users"
+                           v-for="(solicitarviatura, key) in SolicitarViatura"
                            :key="key"
                            >
-                           {{ user.name }}
+                           
 
                         </li>
                         

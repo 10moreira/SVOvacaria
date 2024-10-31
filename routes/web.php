@@ -25,6 +25,15 @@ Route::get('/users', function () {
 })->middleware(['auth'])->name('user.index');
 
 
+Route::get('/solicitarviatura', function () {
+    return Inertia::render('SolicitarViatura');    
+})->middleware(['auth'])->name('solicitarviatura');
+
+
+
+
+
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
