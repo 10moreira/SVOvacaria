@@ -29,6 +29,16 @@ Route::get('/solicitarviatura', function () {
     return Inertia::render('SolicitarViatura');    
 })->middleware(['auth'])->name('solicitarviatura');
 
+Route::get('/minhassolicitacoes', function () {
+    return Inertia::render('MinhasSolicitacoes');    
+})->middleware(['auth'])->name('minhassolicitacoes');
+
+Route::get('/caronas', function () {
+    return Inertia::render('Caronas');    
+})->middleware(['auth'])->name('caronas');
+
+
+
 
 
 

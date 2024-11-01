@@ -25,7 +25,7 @@ export default {
             <h2
                 class="text-xl font-semibold leading-tight text-gray-800"
             >
-                Aqui vai componentes para Solicitar Viaturas!
+                Aqui criar tabela com lista das caronas já feitas!
             </h2>
         </template>
 

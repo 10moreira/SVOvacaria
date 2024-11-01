@@ -55,6 +55,19 @@ import { Link } from '@inertiajs/vue3';
                                 </NavLink> 
 
 
+                                <NavLink
+                                    :href="route('minhassolicitacoes')"
+                                    :active="route().current('minhassolicitacoes')"
+                                >
+                                    Minhas Solicitações
+                                </NavLink> 
+
+                                <NavLink
+                                    :href="route('caronas')"
+                                    :active="route().current('caronas')"
+                                >
+                                    Caronas
+                                </NavLink>
 
                             </div>
                         </div>
@@ -89,16 +102,21 @@ import { Link } from '@inertiajs/vue3';
 
                                     <template #content>
                                         <DropdownLink
+                                           
+                                        >
+                                            Painel administrativo
+                                        </DropdownLink>
+                                        <DropdownLink
                                             :href="route('profile.edit')"
                                         >
-                                            Profile
+                                            Editar perfil
                                         </DropdownLink>
                                         <DropdownLink
                                             :href="route('logout')"
                                             method="post"
                                             as="button"
                                         >
-                                            Log Out
+                                            Sair
                                         </DropdownLink>
                                     </template>
                                 </Dropdown>
@@ -189,7 +207,8 @@ import { Link } from '@inertiajs/vue3';
                             </div>
                         </div>
 
-                        <div class="mt-3 space-y-1">
+                        <div class="mt-3 space-y-1">                    
+                        
                             <ResponsiveNavLink :href="route('profile.edit')">
                                 Profile
                             </ResponsiveNavLink>
