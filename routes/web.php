@@ -37,6 +37,10 @@ Route::get('/caronas', function () {
     return Inertia::render('Caronas');    
 })->middleware(['auth'])->name('caronas');
 
+Route::get('/admin', function () {
+    return Inertia::render('Admin');    
+})->middleware(['auth'])->name('admin');
+
 
 
 

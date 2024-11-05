@@ -25,7 +25,7 @@ export default {
             <h2
                 class="text-xl font-semibold leading-tight text-gray-800"
             >
-                Aqui criar tabela com lista das solicitações!
+                
             </h2>
         </template>
 
@@ -39,10 +39,10 @@ export default {
                            v-for="(solicitarviatura, key) in SolicitarViatura"
                            :key="key"
                            >
-                           
-
+                                                     
                         </li>
-                        
+
+                         Aqui criar tabela com lista das solicitações!
                     </div>
                 </div>
             </div>

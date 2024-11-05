@@ -25,7 +25,7 @@ export default {
             <h2
                 class="text-xl font-semibold leading-tight text-gray-800"
             >
-                Aqui vai componentes para Solicitar Viaturas!
+               
             </h2>
         </template>
 
@@ -43,6 +43,7 @@ export default {
 
                         </li>
                         
+                        Aqui vai componentes para Solicitar Viaturas! 
                     </div>
                 </div>
             </div>

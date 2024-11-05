@@ -102,7 +102,7 @@ import { Link } from '@inertiajs/vue3';
 
                                     <template #content>
                                         <DropdownLink
-                                           
+                                              :href="route('admin')"
                                         >
                                             Painel administrativo
                                         </DropdownLink>
