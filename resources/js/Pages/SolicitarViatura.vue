@@ -25,7 +25,7 @@ export default {
             <h2
                 class="text-xl font-semibold leading-tight text-gray-800"
             >
-               
+            Realizar nova solicitação aqui
             </h2>
         </template>
 
@@ -40,7 +40,6 @@ export default {
                            :key="key"
                            >
                            
-
                         </li>
                         
                         Aqui vai componentes para Solicitar Viaturas! 

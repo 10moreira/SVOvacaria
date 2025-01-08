@@ -54,13 +54,12 @@ const submit = () => {
                 <InputLabel for="DataNascimento" value="Data Nascimento" />
 
                 <TextInput
-                    id="name"
+                    id="DataNascimento"
                     type="text"
                     class="mt-1 block w-full"
-                    v-model="form.name"
-                    required
-                    autofocus
-                    autocomplete="name"
+                    v-model="form.default"
+                    required                    
+                    autocomplete="DataNascimento"
                 />
 
                 <InputError class="mt-2" :message="form.errors.name" />
@@ -71,13 +70,12 @@ const submit = () => {
                 <InputLabel for="siape" value="Siape" />
 
                 <TextInput
-                    id="name"
+                    id="siape"
                     type="text"
                     class="mt-1 block w-full"
-                    v-model="form.name"
-                    required
-                    autofocus
-                    autocomplete="name"
+                    v-model="form.InputLabel"
+                    required                    
+                    autocomplete="siape"
                 />
 
                 <InputError class="mt-2" :message="form.errors.name" />
@@ -92,7 +90,7 @@ const submit = () => {
                     class="mt-1 block w-full"
                     v-model="form.email"
                     required
-                    autocomplete="username"
+                    autocomplete="email"
                 />
 
                 <InputError class="mt-2" :message="form.errors.email" />
@@ -189,16 +187,17 @@ const submit = () => {
                                                                      
                     </div>                                                                                                                                                                                         
 
+
             <div class="mt-4">
                 <InputLabel for="celular" value="Celular"/>
 
                 <TextInput
-                    id="email"
-                    type="email"
+                    id="celular"
+                    type="celular"
                     class="mt-1 block w-full"
-                    v-model="form.email"
+                    v-model="form.type"
                     required
-                    autocomplete="username"
+                    autocomplete="celular"
                 />
 
                 <InputError class="mt-2" :message="form.errors.email" />
